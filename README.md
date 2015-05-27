@@ -1,24 +1,26 @@
-# Git Style Guide
+# Git Staiyol Gaid
 
-This is a Git Style Guide inspired by [*How to Get Your Change Into the Linux
+Nigè git Staiyol Gaid wa inspairen bai [*How to Get Your Change Into the Linux
 Kernel*](https://www.kernel.org/doc/Documentation/SubmittingPatches),
 the [git man pages](http://git-scm.com/doc) and various practices popular
 among the community.
 
-Translations of the guide are available in the following languages:
+Nigè gaid dè transleiçion wa àveilàbol in folowing lengueijs:
 
 * [Chinese (Simplified)](https://github.com/aseaday/git-style-guide)
 * [Chinese (Traditional)](https://github.com/JuanitoFatas/git-style-guide)
+* [English](https://github.com/agis-/git-style-guide) 
 * [French](https://github.com/pierreroth64/git-style-guide)
 * [Japanese](https://github.com/objectx/git-style-guide)
 * [Korean](https://github.com/ikaruce/git-style-guide)
 * [Portuguese](https://github.com/guylhermetabosa/git-style-guide)
 * [Ukrainian](https://github.com/denysdovhan/git-style-guide)
+* [Thai](https://github.com/zondezatera/git-style-guide) 
 
 If you feel like contributing, please do so! Fork the project and open a pull
 request.
 
-# Table of contents
+# Kontent teibol
 
 1. [Branches](#branches)
 2. [Commits](#commits)
