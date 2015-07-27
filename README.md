@@ -2,10 +2,10 @@
 
 Nigè git Staiyol Gaid wa inspairen bai [*How to Get Your Change Into the Linux
 Kernel*](https://www.kernel.org/doc/Documentation/SubmittingPatches),
-the [git man pages](http://git-scm.com/doc) and various practices popular
-among the community.
+đe [git man pages](http://git-scm.com/doc) en väryùs präktises popyular
+amoŋ đe kommyuniti.
 
-Nigè gaid dè transleiçion wa àveilàbol in folowing lengueijs:
+Nigè gaid dè transleiçion wa àveilàbol in folowiŋ lengueijs:
 
 * [Chinese (Simplified)](https://github.com/aseaday/git-style-guide)
 * [Chinese (Traditional)](https://github.com/JuanitoFatas/git-style-guide)
@@ -18,7 +18,7 @@ Nigè gaid dè transleiçion wa àveilàbol in folowing lengueijs:
 * [Ukrainian](https://github.com/denysdovhan/git-style-guide)
 * [Thai](https://github.com/zondezatera/git-style-guide) 
 
-If you feel like contributing, please do so! Fork the project and open a pull
+If you feel like kontribyutiŋ, please do so! Fork the project and open a pull
 request.
 
 # Kontent teibol
