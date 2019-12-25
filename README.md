@@ -1,7 +1,7 @@
 # Git Staiyol Gaid
 
 Nigè git Staiyol Gaid wa inspairen bai [*How to Get Your Change Into the Linux
-Kernel*](https://www.kernel.org/doc/Documentation/SubmittingPatches),
+Kernel*](https://kernel.org/doc/html/latest/process/submitting-patches.html),
 đe [git man pages](http://git-scm.com/doc) en väryùs präktises popyular
 amoŋ đe kommyuniti.
 
@@ -11,10 +11,15 @@ Nigè gaid dè transleiçion wa àveilàbol in folowiŋ lengueijs:
 * [Chinese (Traditional)](https://github.com/JuanitoFatas/git-style-guide)
 * [English](https://github.com/agis-/git-style-guide) 
 * [French](https://github.com/pierreroth64/git-style-guide)
+* [German](https://github.com/runjak/git-style-guide)
 * [Greek](https://github.com/grigoria/git-style-guide)
 * [Japanese](https://github.com/objectx/git-style-guide)
 * [Korean](https://github.com/ikaruce/git-style-guide)
 * [Portuguese](https://github.com/guylhermetabosa/git-style-guide)
+* [Russian](https://github.com/alik0211/git-style-guide)
+* [Spanish](https://github.com/jeko2000/git-style-guide)
+* [Thai](https://github.com/zondezatera/git-style-guide)
+* [Turkish](https://github.com/CnytSntrk/git-style-guide)
 * [Ukrainian](https://github.com/denysdovhan/git-style-guide)
 * [Thai](https://github.com/zondezatera/git-style-guide) 
 
@@ -49,7 +54,14 @@ request.
   $ git checkout -b issue-15
   ```
 
-* Use *dashes* to separate words.
+* Use lowercase in branch names. External ticket identifiers with uppercase
+  letters are a valid exception. Use *hyphens* to separate words.
+
+  ```shell
+  $ git checkout -b new-feature      # good
+  $ git checkout -b T321-new-feature # good (Phabricator task id)
+  $ git checkout -b New_Feature      # bad
+  ```
 
 * When several people are working on the *same* feature, it might be convenient
   to have *personal* feature branches and a *team-wide* feature branch.
@@ -64,8 +76,8 @@ request.
   Merge at will the personal branches to the team-wide branch (see ["Merging"](#merging)).
   Eventually, the team-wide branch will be merged to "master".
 
-* Delete your branch from the upstream repository after it's merged (unless
-  there is a specific reason not to).
+* Delete your branch from the upstream repository after it's merged, unless
+  there is a specific reason not to.
 
   Tip: Use the following command while being on "master", to list merged
   branches:
@@ -80,6 +92,9 @@ request.
   *logical changes* in one commit. For example, if a patch fixes a bug and
   optimizes the performance of a feature, split it into two separate commits.
 
+  *Tip: Use `git add -p` to interactively stage specific portions of the
+  modified files.*
+
 * Don't split a single *logical change* into several commits. For example,
   the implementation of a feature and the corresponding tests should be in the
   same commit.
@@ -89,6 +104,10 @@ request.
 
 * Commits should be ordered *logically*. For example, if *commit X* depends
   on changes done in *commit Y*, then *commit Y* should come before *commit X*.
+
+Note: While working alone on a local branch that *has not yet been pushed*, it's
+fine to use commits as temporary snapshots of your work. However, it still
+holds true that you should apply all of the above *before* pushing it.
 
 ### Messages
 
@@ -128,7 +147,7 @@ request.
   It should also provide any pointers to related resources (eg. link to the
   corresponding issue in a bug tracker):
 
-  ```shell
+  ```text
   Short (50 chars or fewer) summary of changes
 
   More detailed explanatory text, if necessary. Wrap it to
@@ -147,18 +166,25 @@ request.
     followed by a single space, with blank lines in
     between
 
+  The pointers to your related resources can serve as a footer
+  for your commit message. Here is an example that is referencing
+  issues in a bug tracker:
+
+  Resolves: #56, #78
+  See also: #12, #34
+
   Source http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
   ```
 
   Ultimately, when writing a commit message, think about what you would need
   to know if you run across the commit in a year from now.
 
-* If a *commit A* depends on another *commit B*, the dependency should be
-  stated in the message of *commit A*. Use the commit's hash when referring to
+* If a *commit A* depends on *commit B*, the dependency should be
+  stated in the message of *commit A*. Use the SHA1 when referring to
   commits.
 
   Similarly, if *commit A* solves a bug introduced by *commit B*, it should
-  be stated in the message of *commit A*.
+  also be stated in the message of *commit A*.
 
 * If a commit is going to be squashed to another commit use the `--squash` and
   `--fixup` flags respectively, in order to make the intention clear:
@@ -234,13 +260,13 @@ request.
 
 * *Test before you push.* Do not push half-done work.
 
-* Use [annotated tags](http://git-scm.com/book/en/v2/Git-Basics-Tagging#Annotated-Tags)
+* Use [annotated tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_annotated_tags)
   for marking releases or other important points in the history. Prefer
-  [lightweight tags](http://git-scm.com/book/en/v2/Git-Basics-Tagging#Lightweight-Tags)
+  [lightweight tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_lightweight_tags)
   for personal use, such as to bookmark commits for future reference.
 
 * Keep your repositories at a good shape by performing maintenance tasks
-  occasionally, in your local *and* remote repositories:
+  occasionally:
 
   * [`git-gc(1)`](http://git-scm.com/docs/git-gc)
   * [`git-prune(1)`](http://git-scm.com/docs/git-prune)
@@ -250,9 +276,10 @@ request.
 
 ![cc license](http://i.creativecommons.org/l/by/4.0/88x31.png)
 
-This work is licensed under a Creative Commons Attribution 4.0
-International license.
+This work is licensed under a [Creative Commons Attribution 4.0
+International license](https://creativecommons.org/licenses/by/4.0/).
 
 # Credits
 
 Agis Anastasopoulos / [@agisanast](https://twitter.com/agisanast) / http://agis.io
+... and [contributors](https://github.com/agis-/git-style-guide/graphs/contributors)!
