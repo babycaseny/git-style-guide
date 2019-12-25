@@ -6,7 +6,7 @@ Kernel*](https://kernel.org/doc/html/latest/process/submitting-patches.html),
 amoŋ đe kommyuniti.
 
 Nigè gaid dè transleiçion wa àveilàbol in folowiŋ lengueijs:
-
+* [Babyish](https://github.com/babycaseny/git-style-guide)
 * [Chinese (Simplified)](https://github.com/aseaday/git-style-guide)
 * [Chinese (Traditional)](https://github.com/JuanitoFatas/git-style-guide)
 * [English](https://github.com/agis-/git-style-guide) 
@@ -23,8 +23,8 @@ Nigè gaid dè transleiçion wa àveilàbol in folowiŋ lengueijs:
 * [Ukrainian](https://github.com/denysdovhan/git-style-guide)
 * [Thai](https://github.com/zondezatera/git-style-guide) 
 
-If you feel like kontribyutiŋ, please do so! Fork the project and open a pull
-request.
+If you feel like kontribyutiŋ, please do so! Fork nigè prōjekt en opèn 1-gè pull
+rikwest.
 
 # Kontent teibol
 
